@@ -36,15 +36,8 @@ jobs:
           pip install -r requirements.txt
 
       # Step 4: Create dummy data to allow the training script to run
-      # We do this because the actual 'data/raw' folder is not (and should not be) committed to Git.
       - name: Create dummy data for CI test
-        run: |
-          mkdir -p data/raw/SIGN_A data/raw/SIGN_B
-          python -c "import json; data = [[0.0]*186]*45; \
-            with open('data/raw/SIGN_A/0.json', 'w') as f: json.dump(data, f); \
-            with open('data/raw/SIGN_A/1.json', 'w') as f: json.dump(data, f); \
-            with open('data/raw/SIGN_B/0.json', 'w') as f: json.dump(data, f); \
-            with open('data/raw/SIGN_B/1.json', 'w') as f: json.dump(data, f);"
+        run: python scripts/create_dummy_data.py
 
       # Step 5: Run the training script as a "smoke test"
       # This doesn't check for model accuracy, but it ensures the script runs without errors.
