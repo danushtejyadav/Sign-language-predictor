@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Python virtualenv
+.venv/
+venv/
+env/
+include/
+local/
+
+# MLflow
+# Ignore local experiment tracking data and artifacts
+mlruns/
+
+# Data Files
+# Do not commit raw or processed data. These should be managed separately.
+data/raw/*
+data/processed/*
+# Use a .gitkeep file if you want to commit the empty directories:
+# e.g., create an empty file at data/raw/.gitkeep
+# !data/raw/.gitkeep
+# !data/processed/.gitkeep
+
+# Model Artifacts
+# Models are outputs of the training script and should not be versioned in Git.
+# They should be tracked via MLflow or another artifact registry.
+models/*
+# !models/.gitkeep
+
+# IDE and Editor Folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-generated files
+.DS_Store
+Thumbs.db

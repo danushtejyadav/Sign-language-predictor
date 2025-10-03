@@ -1,0 +1,11 @@
+tensorflow
+opencv-python
+mediapipe
+scikit-learn
+numpy
+Pillow
+mlflow
+fastapi
+uvicorn[standard]
+python-multipart
+requests
