@@ -14,10 +14,3 @@ This project is a refactored version of a sign language recognition system, desi
   - `client.py`: A Tkinter GUI application for inference.
 - `requirements.txt`: A list of required Python packages.
 
-## Workflow
-
-### 1. Setup
-
-First, install the required packages:
-```bash
-pip install -r requirements.txt
